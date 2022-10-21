@@ -1,7 +1,7 @@
 package CRUD.Repository;
 
 import CRUD.Entities.Car;
-import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public class CarRepository extends MongoRepository<Car, String>{
+public interface CarRepository extends JpaRepository<Car, String>{
 }
