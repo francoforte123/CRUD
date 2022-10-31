@@ -18,7 +18,6 @@ public class CarController {
 
     @PostMapping("/create")
     public Car createCar(@RequestBody Car car) {
-        car.setId(null);
         return carRepository.save(car);
     }
 
